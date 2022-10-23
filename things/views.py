@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import ThingsForm
+from .forms import ThingForm
 def home(request):
-    form = ThingsForm()
+    form = ThingForm()
     return render(request, 'home.html', {'form': form})
